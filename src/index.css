@@ -10,6 +10,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background: linear-gradient(147.52deg, #F9FAFB 8.89%, #D2D6DB 100.48%)
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
 }
 
 * {
@@ -28,4 +34,106 @@ body {
 .credits a {
   color: #000;
   font-weight: bold;
+}
+
+
+.figma-button {
+  /* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+position: absolute;
+width: 114px;
+height: 24px;
+left: 144px;
+top: 1731px;
+
+border-radius: 4px;
+
+
+/* Button/_Placeholder-icon
+
+<p>placeholder, circle</p>
+*/
+
+display: none;
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text padding */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 2px;
+
+width: 88px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 84px;
+height: 24px;
+
+/* text-base-16/medium */
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+color: #4338CA;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* arrow-right-line */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 17.59%;
+bottom: 17.59%;
+
+background: #4338CA;
+
 }
