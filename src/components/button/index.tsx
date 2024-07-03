@@ -9,7 +9,7 @@ interface ButtonProps {
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     const { label, rightAddOnIcon, onClick } = props;
     return (
-        <a onClick={onClick} className="flex flex-row justify-evenly items-center max-w-[128px]">
+        <a onClick={onClick} className="flex flex-row items-center max-w-[128px]">
             <p className="text-indigo-700 hover:text-indigo-800 font-medium">{label}</p>
             {rightAddOnIcon && (<span className="hover:text-indigo-800">{rightAddOnIcon}</span>)}
         </a>

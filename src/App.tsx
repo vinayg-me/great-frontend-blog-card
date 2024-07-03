@@ -1,14 +1,19 @@
 import "./App.css";
-import rightArrowIcon from './assets/icons/arrow-right-line.svg';
-import { Button } from "./components/button";
+import Card from "./components/card";
+import CardImg from './assets/img/spacejoy-YqFz7UMm8qE-unsplash.jpg';
 
 function App() {
-  const Icon = () => (<img src={rightArrowIcon} />)
+  // const Icon = () => (<img src={rightArrowIcon} />)
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Button label="Read More" onClick={() => {}} rightAddOnIcon={<Icon />} />
-    </>
+    <div className="flex flex-1 justify-center items-center w-full h-full">
+      <Card 
+        imgUrl={CardImg}
+        badges={['Interior']}
+        title="Top 5 Living Room Inspirations"
+        content="Curated vibrants colors for your living, make it pop & calm in the same time."
+        ctaLink="/top5"
+      />
+    </div>
   );
 }
 
